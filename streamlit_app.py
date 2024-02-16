@@ -5,6 +5,14 @@ import streamlit as st
 from datetime import datetime
 import pytz
 
+# Configurações da página
+st.set_page_config(
+    page_title="Insalubridade",
+    page_icon="	:100:",
+    layout="wide",
+    initial_sidebar_state='collapsed'
+) 
+
 #definição da função
 def obter_dados(numero_proa):
 
