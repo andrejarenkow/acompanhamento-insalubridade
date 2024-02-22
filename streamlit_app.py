@@ -67,4 +67,10 @@ for i in datas:
   dados[i] = dados[i].str.replace('NaT','Não adquirido')
 
 
-dados
+st.dataframe(dados, use_container_width=True, height=1000, hide_index=True,
+            column_config={
+        "Data de Abertura": st.column_config.DatetimeColumn(
+            "Data de Abertura",
+            format="D MMM YYYY,",
+        ),
+    },)
